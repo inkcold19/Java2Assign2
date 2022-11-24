@@ -1,53 +1,54 @@
+import java.io.Serializable;
 
+public class Data implements Serializable {
 
-    import java.io.Serializable;
+  private int x;
+  private int y;
+  private boolean circleTurn;
+  private String winner;
 
-    public class Data implements Serializable {
-        private int x;
-        private int y;
-        private boolean circleTurn;
-        private String winner;
+  public String getMessage() {
+    return Message;
+  }
 
-        public String getMessage() {
-            return Message;
-        }
+  public void setMessage(String message) {
+    Message = message;
+  }
 
-        public void setMessage(String message) {
-            Message = message;
-        }
+  private String Message;
 
-        private String Message;
-        public Data(){}
+  public Data() {
+  }
 
-        public int getX() {
-            return x;
-        }
+  public int getX() {
+    return x;
+  }
 
-        public void setX(int x) {
-            this.x = x;
-        }
+  public void setX(int x) {
+    this.x = x;
+  }
 
-        public int getY() {
-            return y;
-        }
+  public int getY() {
+    return y;
+  }
 
-        public void setY(int y) {
-            this.y = y;
-        }
+  public void setY(int y) {
+    this.y = y;
+  }
 
-        public boolean isCircleTurn() {
-            return circleTurn;
-        }
+  public boolean isCircleTurn() {
+    return circleTurn;
+  }
 
-        public void setCircleTurn(boolean circleTurn) {
-            this.circleTurn = circleTurn;
-        }
+  public void setCircleTurn(boolean circleTurn) {
+    this.circleTurn = circleTurn;
+  }
 
-        public String getWinner() {
-            return winner;
-        }
+  public String getWinner() {
+    return winner;
+  }
 
-        public void setWinner(String winner) {
-            this.winner = winner;
-        }
-    }
+  public void setWinner(String winner) {
+    this.winner = winner;
+  }
+}
