@@ -1,4 +1,5 @@
 
+
 import bean.Person;
 import bean.PersonDAO;
 import javafx.application.Application;
@@ -31,7 +32,7 @@ public class Client4 extends Application {
 
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(this.getClass().getResource("../fxmlAndImg/tic-tac-toe.fxml"));
-        loader.setController(new MatchFxml(primaryStage, "127.0.0.1", 8087,read));
+        loader.setController(new MatchFxml(primaryStage, "127.0.0.1", 8087, read));
         Pane rootPane = loader.load();
         Scene scene = new Scene(rootPane, rootPane.getPrefWidth(), rootPane.getPrefHeight());
         primaryStage.sizeToScene();
@@ -39,7 +40,7 @@ public class Client4 extends Application {
         primaryStage.setTitle("TicTacToe");
         primaryStage.setResizable(false);
         primaryStage.show();
-      }else{
+      } else {
         System.out.println("密码错误");
       }
 
